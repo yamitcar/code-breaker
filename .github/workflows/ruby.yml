@@ -55,7 +55,7 @@ jobs:
       if: ${{ success() }}
       uses: devmasx/merge-branch@v1.1.0
       with:
-        type: now
+        type: nowgirt
         target_branch: 'release'
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

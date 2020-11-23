@@ -4,7 +4,6 @@ para ver el reporte de analisis de codigo:
 
 https://yamitcar.github.io/code-breaker/overview.html#
 
-
 ### Para el setup sin docker:
 
 install ruby 2.6.5
