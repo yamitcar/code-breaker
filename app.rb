@@ -1,6 +1,17 @@
 require 'sinatra'
 require './config'
+require './lib/code_breaker'
 
 get '/' do
-    'hola mundo'
+    erb :index
+end
+
+post '/arriesgar' do
+    code_breaker = CodeBreaker.new('5')
+    if code_breaker.arriesgar(params[:numero])
+        session[:feedback] = "Chee! Ganaste!"
+    else
+        session[:feedback] = "Boludo! fuiste!"    
+    end
+    erb :index
 end
